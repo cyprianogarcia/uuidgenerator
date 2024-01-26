@@ -1,6 +1,6 @@
 function generateUUID() {
     const generatedUuid = uuidv4();
-    document.getElementById('uuidInput').value = "*Identificador: " + generatedUuid;
+    document.getElementById('uuidInput').value = generatedUuid;
   }
 
   function copyToClipboard() {
