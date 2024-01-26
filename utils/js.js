@@ -1,15 +1,26 @@
 function generateUUID() {
     const generatedUuid = uuidv4();
     document.getElementById('uuidInput').value = generatedUuid;
-  }
+}
 
-  function copyToClipboard() {
+function copyToClipboard() {
     const uuidInput = document.getElementById('uuidInput');
-    uuidInput.select();
+    const copiado = document.getElementById('copiado');
+    
+    const tempInput = document.createElement('input');
+    tempInput.value = uuidInput.value;
+    document.body.appendChild(tempInput);
+    tempInput.select();
     document.execCommand('copy');
-    alert('UUID copiado para a área de transferência!');
-  }
-  
-  function reloadPage() {
+    document.body.removeChild(tempInput);
+
+    copiado.classList.add('ativo');
+    setTimeout(function () {
+        copiado.classList.remove('ativo');
+    }, 4000);
+}
+
+
+function reloadPage() {
     location.reload(true);
-  }
+}

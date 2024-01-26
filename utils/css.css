@@ -1,9 +1,9 @@
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,14 +20,20 @@ body{
 }
 
 input{
-    width: 95%;
-    max-width: 300px;
+    width: 100%;
     font-size: 1rem;
     padding: 10px;
     border-radius: 10px;
     outline: none;
     text-align: center;
     user-select: none;
+}
+
+.inputs {
+    display: block;
+    position: relative;
+    width: 95%;
+    max-width: 350px;
 }
 
 .copiar{
@@ -50,4 +56,70 @@ input{
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+#copiado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    animation: showConfimacao 2s ease;
+    background: linear-gradient(270deg, #00c800, #00c800, #ffffff, #ffffff);
+    background-size: 400%;
+    visibility: hidden;
+    animation: none;
+    user-select: none;
+}
+
+.ativo{
+    visibility: visible !important;
+    -webkit-animation: showConfirmacao 5s ease-in-out !important;
+    -moz-animation: showConfirmacao 5s ease-in-out !important;
+    animation: showConfirmacao 5s ease-in-out !important;
+}
+
+@keyframes showConfirmacao {
+    0%{
+        background-position:10% 0%;
+        opacity: 0;
+    }25%{
+        background-position:100% 100%;
+        opacity: 1;
+    }100%{
+        background-position:10% 100%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes showConfirmacao {
+    0%{
+        background-position:10% 0%;
+        opacity: 0;
+    }25%{
+        background-position:100% 100%;
+        opacity: 1;
+    }100%{
+        background-position:10% 100%;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes showConfirmacao {
+    0%{
+        background-position:10% 0%;
+        opacity: 0;
+    }25%{
+        background-position:100% 100%;
+        opacity: 1;
+    }100%{
+        background-position:10% 100%;
+        opacity: 0;
+    }
 }
