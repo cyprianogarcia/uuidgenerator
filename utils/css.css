@@ -1,0 +1,53 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    width: 95%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    user-select: none;
+}
+
+.copiar{
+    background-color: rgb(0, 200, 0);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.novo{
+    background-color: rgb(200, 200, 200);
+    color: black;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}

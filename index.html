@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+  <title>UUID Generator v4 - Javascript</title>
+
+</head>
+<body>
+
+  <h1>UUID Generator</h1>
+  <input type="text" id="uuidInput" onclick="copyToClipboard()" readonly>
+  <div>
+    <button onclick="copyToClipboard()" class="copiar">Copiar</button>
+    <button onclick="reloadPage()" class="novo">Novo</button>
+  </div>
+
+  <script>
+    window.onload = generateUUID;
+  </script>
+
+
+</body>
+</html>
