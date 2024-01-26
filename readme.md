@@ -1,4 +1,4 @@
-# UUID GENERATOR v4 [![CI](https://github.com/uuidjs/uuid/workflows/CI/badge.svg)](https://github.com/uuidjs/uuid/actions?query=workflow%3ACI)
+# UUID GENERATOR v4 [![CI](https://github.com/uuidjs/uuid/workflows/CI/badge.svg)](https://github.com/cyprianogarcia/uuidgenerator/actions/workflows/ci.yml)
 
 Gerador de UUID v4 VARCHAR(36) em Javacript. Veja o resultado em:
 [`UUID Generator site`](https://uuidgenerator.com.br)
